@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: omni_hr_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: "${POSTGRES_USER:-postgres}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?POSTGRES_PASSWORD must be set in .env}"
+      POSTGRES_DB: "${POSTGRES_DB:-omni_hr}"
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - omni_hr_pgdata:/var/lib/postgresql/data
+
+volumes:
+  omni_hr_pgdata:

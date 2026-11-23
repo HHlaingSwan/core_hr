@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "skills": {
+    "expo-native-ui": {
+      "source": "expo/skills",
+      "commit": "dfdebcc6c4c1bf7a9471cefd6b6f39c7ba6c884d",
+      "sourceType": "github",
+      "skillPath": "plugins/expo/skills/expo-native-ui/SKILL.md",
+      "computedHash": "500813b2c531ea88b2cc72206ff395c4453a15cc679b14cd78bf5116923ad541"
+    },
+    "expo-ui": {
+      "source": "expo/skills",
+      "commit": "dfdebcc6c4c1bf7a9471cefd6b6f39c7ba6c884d",
+      "sourceType": "github",
+      "skillPath": "plugins/expo/skills/expo-ui/SKILL.md",
+      "computedHash": "7cc34e3ee3d44ee6f754f4cc57bf64d18225ec8d8993d9540a33b9779c540de4"
+    }
+  }
+}

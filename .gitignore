@@ -1,0 +1,49 @@
+# Dependencies across all workspaces
+**/node_modules/
+.pnpm-store
+
+# Environment variables & secrets (keep .env.example tracked)
+**/.env
+**/.env*.local
+!**/.env.example
+
+# Next.js build artifacts (Web)
+web/.next/
+.next/
+web/out/
+
+# Fastify & TypeScript build artifacts (Server)
+server/dist/
+dist/
+*.tsbuildinfo
+
+# Expo & React Native build artifacts (Mobile)
+mobile/.expo/
+.expo/
+web-build/
+expo-env.d.ts
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.metro-health-check*
+mobile/ios/
+mobile/android/
+
+# Testing reports
+playwright-report/
+test-results/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.*
+
+# OS & Editor metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

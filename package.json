@@ -1,0 +1,19 @@
+{
+  "name": "omni-hr-core",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend Server & Mobile Core for Omni HR",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:mobile": "npm --prefix mobile run start",
+    "test:server": "npm --prefix server run test",
+    "build:server": "npm --prefix server run build",
+    "typecheck:mobile": "npm --prefix mobile run typecheck",
+    "typecheck:server": "npm --prefix server run build",
+    "typecheck:all": "npm run typecheck:mobile && npm run typecheck:server",
+    "db:generate": "npm --prefix server run db:generate",
+    "db:migrate": "npm --prefix server run db:migrate",
+    "db:seed": "npm --prefix server run db:seed",
+    "db:superadmin": "npm --prefix server run db:superadmin"
+  }
+}
